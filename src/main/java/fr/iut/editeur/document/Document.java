@@ -44,7 +44,7 @@ public class Document {
     }
 
     public void clear() {
-        texte = "";
+        this.texte = "";
     }
 
     @Override

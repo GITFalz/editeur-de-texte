@@ -39,6 +39,14 @@ public class Document {
         texte = partieGauche + majuscule + partieDroite;
     }
 
+    public void effacer(int debut, int fin) {
+        remplacer(debut, fin, "");
+    }
+
+    public void clear() {
+        this.texte = "";
+    }
+
     @Override
     public String toString() {
         return this.texte;

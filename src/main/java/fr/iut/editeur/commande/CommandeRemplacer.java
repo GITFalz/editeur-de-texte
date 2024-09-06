@@ -15,11 +15,13 @@ public class CommandeRemplacer extends CommandeDocument{
     public void executer() {
         int debut = Integer.parseInt(parameters[1]);
         int fin = Integer.parseInt(parameters[2]);
-        if(parameters.length>3){
-            String texte = parameters[3];
-            this.document.remplacer(debut,fin,texte);
-            super.executer();
+        String texte;
+        if(parameters.length>3) {
+            texte = parameters[3];
         }
+        else texte = "";
+        this.document.remplacer(debut,fin,texte);
+        super.executer();
 
     }
 }

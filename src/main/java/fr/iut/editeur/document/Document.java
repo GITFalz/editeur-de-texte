@@ -44,4 +44,7 @@ public class Document {
         texte = "";
     }
 
+    public void inserer(int index, String texte) {
+        remplacer(index+1, index+1, texte);
+    }
 }

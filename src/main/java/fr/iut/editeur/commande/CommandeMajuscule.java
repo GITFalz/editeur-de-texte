@@ -7,10 +7,9 @@ public class CommandeMajuscule extends CommandeDocument{
         super(document, parameters);
     }
 
-    public void executer() {
+    public void commandeExecuter() {
         int debut = Integer.parseInt(parameters[1]);
         int fin = Integer.parseInt(parameters[2]);
         this.document.majuscules(debut,fin);
-        super.executer();
     }
 }

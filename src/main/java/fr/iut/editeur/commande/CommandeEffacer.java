@@ -7,7 +7,7 @@ public class CommandeEffacer extends CommandeDocument{
         super (document, parameters);
     }
 
-    public void executer() {
+    public void commandeExecuter() {
 
         if(parameters.length < 3) {
             System.err.println("Format attendu : effacer;debut;fin");
@@ -17,6 +17,5 @@ public class CommandeEffacer extends CommandeDocument{
         int debut = Integer.parseInt(parameters[1]);
         int fin = Integer.parseInt(parameters[2]);
         this.document.effacer(debut, fin);
-        super.executer();
     }
 }

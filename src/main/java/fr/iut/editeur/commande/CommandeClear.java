@@ -7,7 +7,7 @@ public class CommandeClear extends CommandeDocument{
         super(document, parameters);
     }
 
-    public void executer() {
+    public void commandeExecuter() {
 
         if(parameters.length != 1) {
             System.err.println("Format attendu : clear");
@@ -15,6 +15,5 @@ public class CommandeClear extends CommandeDocument{
         }
 
         this.document.clear();
-        super.executer();
     }
 }

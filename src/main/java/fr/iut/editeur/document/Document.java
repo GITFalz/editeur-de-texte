@@ -76,6 +76,15 @@ public class Document {
         this.texte = "";
     }
 
+    /**
+     * Insere du texte à index
+     * @param index place dans la zone de texte en nomnbre de char
+     * @param texte nouveau texte à ajouter
+     */
+    public void inserer(int index, String texte) {
+        remplacer(index+1, index+1, texte);
+    }
+
     @Override
     public String toString() {
         return this.texte;

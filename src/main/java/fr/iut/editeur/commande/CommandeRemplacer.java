@@ -9,7 +9,7 @@ public class CommandeRemplacer extends CommandeDocument
         super(document, paramteres);
     }
 
-    public void executer() {
+    public void commandeExecuter() {
         String texte = "";
         if(parameters.length < 3) {
             System.err.println("Format attendu : remplacer;debut;fin;texte");
@@ -22,6 +22,5 @@ public class CommandeRemplacer extends CommandeDocument
         int debut = Integer.parseInt(parameters[1]);
         int fin = Integer.parseInt(parameters[2]);
         this.document.remplacer(debut, fin, texte);
-        super.executer();
     }
 }

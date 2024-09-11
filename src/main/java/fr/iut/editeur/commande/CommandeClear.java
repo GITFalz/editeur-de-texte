@@ -6,8 +6,7 @@ public class CommandeClear extends CommandeDocument{
     public CommandeClear(Document document, String[] parameters) {
         super(document, parameters);
     }
-    public void executer() {
+    public void commandeExecuter() {
         this.document.clear();
-        super.executer();
     }
 }
